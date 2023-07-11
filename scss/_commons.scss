@@ -66,6 +66,9 @@ p{
     box-shadow: map-get($map:$paleta , $key:'trece' );
 }
 
+.bg-dark-gray{
+    background-color: map-get($map: $paleta, $key:'seis' );
+}
 
 /* anuncio */
 .box-top{

@@ -71,6 +71,35 @@
     @include flex(column,flex-end,center,nowrap)
 }
 
+
+@mixin medias ($breakpoint){
+    @if $breakpoint == mobile{
+        @media (width <480px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet {
+        @media (width < 600px){
+            @content;
+        }
+    }
+    @if $breakpoint == desktop{
+        @media (width < 1200px){
+            @content;
+        }
+    }
+}
+
+
+main{
+    @include medias(mobile){
+        background-color: red;
+    }
+    @include medias(tablet){
+        background-color: green;
+    }
+}
+
 //maps
 $paleta:(
     'uno': #af40f6,
