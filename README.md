@@ -6,8 +6,10 @@ Instalo las dependencia
 
 npm i
 
+Corro sass
 npm run sass:watch
 
+Corro el purge css
 npm run build -- para purgar
 
 
